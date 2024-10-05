@@ -1,0 +1,21 @@
+   # Dependencies
+   node_modules/
+
+   # Environment variables
+   .env
+
+   # Build files
+   build/
+   dist/
+
+   # Logs
+   *.log
+
+   # OS generated files
+   .DS_Store
+
+   # Firebase config
+   src/firebase.js
+
+   # Google Cloud credentials
+   google-credentials.json
