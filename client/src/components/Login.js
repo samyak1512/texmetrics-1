@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { auth } from '../firebase';
 import google from '../google.svg';
+import logo from '../logo.png';
 import { 
   signInWithEmailAndPassword, 
   createUserWithEmailAndPassword, 
@@ -80,10 +81,10 @@ const Login = () => {
   };
 
   return (
-    <div className="flex min-h-screen bg-[#F8FAFC]">
-      <div className="w-1/2 p-12 flex flex-col justify-center">
+    <div className="flex min-h-screen bg-[#ffffff]">
+      <div className="w-1/2 p-12 flex flex-col justify-center bg-[rgb(247,247,247)]">
         <div className="mb-12">
-          <img src="/path-to-paperpal-logo.svg" alt="Paperpal" className="h-8" />
+          <img src={logo} alt="TexMetrics" className="h-20" />
         </div>
         <h1 className="text-4xl font-bold mb-2 text-[#1E293B]">Get high-quality academic writing in minutes</h1>
         <p className="text-[#64748B] mb-8">Trusted by 1 Mn+ academics worldwide</p>
@@ -110,7 +111,7 @@ const Login = () => {
         {isSignUp ? (
           <>
             <h2 className="text-3xl font-bold mb-2 text-[#1E293B]">Create your free account</h2>
-            <p className="text-[#64748B] mb-8">One account for Paperpal, Editage and more...</p>
+            <p className="text-[#64748B] mb-8">One account for TexMetrics</p>
             <button
               onClick={handleGoogleSignIn}
               className="flex items-center justify-center w-full p-3 border border-[#E2E8F0] rounded-md mb-4 text-[#1E293B] hover:bg-gray-50"
@@ -205,7 +206,7 @@ const Login = () => {
         ) : (
           <>
             <h2 className="text-3xl font-bold mb-2 text-[#1E293B]">Hi, Welcome back</h2>
-            <p className="text-[#64748B] mb-8">Log in to Paperpal</p>
+            <p className="text-[#64748B] mb-8">Log in to TexMetrics</p>
             <button
               onClick={handleGoogleSignIn}
               className="flex items-center justify-center w-full p-3 border border-[#E2E8F0] rounded-md mb-4 text-[#1E293B] hover:bg-gray-50"
