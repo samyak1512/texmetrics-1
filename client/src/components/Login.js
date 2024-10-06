@@ -93,8 +93,8 @@ const Login = () => {
             "I am using TexMetrics for all my research and communication tasks. It's really efficient in improving the quality of my writing."
           </p>
           <div className="flex items-center">
-            <div className="w-10 h-10 bg-blue-500 rounded-full mr-4 flex items-center justify-center text-white">
-              <span className="text-2xl"></span>
+            <div className="w-10 h-10 rounded-full mr-4 flex items-center justify-center text-white">
+              <span className="text-2xl">🎓</span>
             </div>
             <div>
               <p className="font-semibold text-[#1E293B]">Professor</p>
